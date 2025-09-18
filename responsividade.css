@@ -1,0 +1,402 @@
+ @media(max-width:600px){
+
+nav {
+width: 70%;
+}
+
+#menu {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -700px;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+    transition: left 0.3s ease-out;
+    background-color: #f5f5f5;
+    z-index: 4;
+}
+
+#menu figure{
+    align-self: center;
+}
+
+#menu.active {
+    left: 0;
+}
+
+#menu ul {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 0px 0;
+    width: 100%; 
+}
+
+#menu ul li a {
+    display: block;
+    width: 90%; 
+    padding: 10px 0;
+    text-align: left; 
+    color: #751e27; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#icone-menu {
+    position: fixed;
+    right: 15px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#icone-menu.active .linha:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+#icone-menu.active .linha:nth-child(2) {
+    opacity: 0;
+}
+
+#icone-menu.active .linha:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+#icone-menu .linha,
+#icone-menu  {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.linha {
+    width: 30px;
+}
+
+.linha
+{
+    display: block;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #B49465;
+}
+
+#bandeira{
+        width: 100%;
+    }
+
+#bandeira div{
+    width: 80%;
+}
+
+.sobre-advogado{ flex-direction:column; padding:16px; gap:14px; }
+.sobre-advogado__foto{
+    width:220px;       /* antes 160px */
+    max-width:220px;
+    min-height:300px;  /* antes 220px */
+    align-self:center;
+   
+}
+.sobre-advogado__nome{ font-size:20px; text-align:center; }
+.sobre-advogado__info{ text-align:center; }
+.sobre-advogado__meta{ justify-content:center; }
+.sobre-advogado__acoes{ justify-content:center; }
+
+
+    
+#areas-atuacao{
+flex-direction: column;
+align-items: center;
+
+margin:100px auto 0;
+gap: 20px;
+}
+
+.atuacao{
+        box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.144);
+        width: 100%;
+        border-radius: 15px;
+    padding: 10px;
+    max-width: 350px;
+    min-width: 200px;
+    height: 200px;
+
+}
+
+.servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .servico-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    #container-form{
+flex-direction: column-reverse;
+}
+#container-form p{
+font-size: 1.2em;
+width: 100%;
+text-align: center;
+
+}
+
+form{
+width: 100%;
+}
+        
+        }
+
+
+
+@media (min-width:601px) and (max-width: 768px) {
+     nav {
+    width: 70%;
+}
+
+#menu {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -700px;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+    transition: left 0.3s ease-out;
+    background-color: #f5f5f5;
+    z-index: 4;
+}
+
+#menu figure{
+    align-self: center;
+}
+
+#menu.active {
+    left: 0;
+}
+
+#menu ul {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 0;
+}
+
+#menu ul li {
+    padding: 0px 0;
+    width: 100%; 
+}
+
+#menu ul li a {
+    display: block;
+    width: 90%; 
+    padding: 10px 0;
+    text-align: left; 
+    color: #751e27; 
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#icone-menu {
+    position: fixed;
+    right: 15px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#icone-menu.active .linha:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+}
+
+#icone-menu.active .linha:nth-child(2) {
+    opacity: 0;
+}
+
+#icone-menu.active .linha:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+#icone-menu .linha,
+#icone-menu  {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.linha {
+    width: 30px;
+}
+
+.linha {
+    display: block;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #B49465;
+}
+
+#bandeira div{
+       width: 80%;
+
+    }
+
+.sobre-advogado{
+     max-width: 90%;
+}
+
+ #areas-atuacao{
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+        gap: 20px;
+        }
+
+.atuacao{
+        box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.144);
+        width: 100%;
+        border-radius: 15px;
+        height: 200px;
+        padding: 10px;    
+}
+
+.servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
+#container-form{
+        flex-direction: column-reverse;
+    }
+    #container-form p{
+        width: 100%;
+        text-align: center;
+
+    }
+
+    form{
+        width: 350px;
+    }
+
+}
+
+
+/* Médio (tablets e telas pequenas) */
+@media (min-width:769px) and  (max-width: 1064px) {
+     .servicos-lista {
+        grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+      }
+      #bandeira div{
+       width: 80%;
+
+    }
+
+    .sobre-advogado{
+     max-width: 80%;
+}
+
+
+    #areas-atuacao{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,0%);
+        box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.096);
+    }
+
+    .atuacao{
+        padding: 20px;
+        max-width: 200px;
+        min-width: 150px;
+        height: 250px;
+  
+ 
+    }
+
+     #container-form{
+        display: flex;
+       flex-direction: row-reverse;
+      
+    }
+    #container-form p{
+        width: 40%;
+        text-align: left;
+
+    }
+
+    form{
+        width: 350px;
+    }
+
+
+}
+
+/* Grande (laptops e desktops médios) */
+@media (min-width:1065px){
+    nav a{
+        font-size: 1.4em;
+       
+    }
+    #bandeira{
+        width: 100vw;
+        
+    }
+
+    .sobre-advogado{
+     max-width: 70%;
+     gap: 50px;
+}
+
+.sobre-advogado p{
+    max-width: 90%;
+}
+
+    
+    #areas-atuacao{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,0%);
+        box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.096);
+    }
+
+    .atuacao{
+        padding: 20px;
+        max-width: 400px;
+        min-width: 220px;
+        height: 250px;
+ 
+    }
+
+    .servicos-lista {
+    grid-template-columns: repeat(auto-fit,minmax(280px,2fr));
+    }
+
+    
+    form{
+        width: 400px;
+    }
+
+     #container-form{
+        display: flex;
+        flex-direction: row-reverse;
+      
+    }
+    #container-form p{
+        width: 50%;
+        text-align: left;
+
+    }
+}
